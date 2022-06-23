@@ -86,6 +86,7 @@ public class RoleController {
         return R.ok().put("rows", rows);
     }
 
+    //test
     @PostMapping("/deleteRoleByIds")
     @Operation(summary = "删除角色记录")
     @SaCheckPermission(value = {"ROOT", "ROLE:DELETE"}, mode = SaMode.OR)
